@@ -1,0 +1,23 @@
+{
+  "name": "solana-smart-contract",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/srsydv/Solana-Smart-Contract#readme",
+  "bugs": {
+    "url": "https://github.com/srsydv/Solana-Smart-Contract/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srsydv/Solana-Smart-Contract.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4"
+  }
+}
