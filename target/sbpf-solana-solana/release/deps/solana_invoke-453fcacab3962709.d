@@ -1,0 +1,9 @@
+/Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/calci/target/sbpf-solana-solana/release/deps/libsolana_invoke-453fcacab3962709.rmeta: /Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/lib.rs /Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/stable_instruction_borrowed.rs /Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/../README.md
+
+/Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/calci/target/sbpf-solana-solana/release/deps/libsolana_invoke-453fcacab3962709.rlib: /Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/lib.rs /Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/stable_instruction_borrowed.rs /Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/../README.md
+
+/Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/calci/target/sbpf-solana-solana/release/deps/solana_invoke-453fcacab3962709.d: /Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/lib.rs /Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/stable_instruction_borrowed.rs /Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/../README.md
+
+/Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/lib.rs:
+/Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/stable_instruction_borrowed.rs:
+/Users/shrishyadav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/solana-invoke-0.4.0/src/../README.md:
