@@ -1,6 +1,6 @@
-/Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/calci/target/debug/deps/calci-8a76b9225cc73ab9.d: programs/calci/src/lib.rs
+/Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/target/debug/deps/calci-8a76b9225cc73ab9.d: programs/calci/src/lib.rs
 
-/Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/calci/target/debug/deps/calci-8a76b9225cc73ab9: programs/calci/src/lib.rs
+/Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/target/debug/deps/calci-8a76b9225cc73ab9: programs/calci/src/lib.rs
 
 programs/calci/src/lib.rs:
 

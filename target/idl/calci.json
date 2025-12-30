@@ -8,6 +8,35 @@
   },
   "instructions": [
     {
+      "name": "add",
+      "discriminator": [
+        41,
+        249,
+        249,
+        146,
+        197,
+        111,
+        56,
+        181
+      ],
+      "accounts": [
+        {
+          "name": "calci_acc",
+          "writable": true
+        }
+      ],
+      "args": [
+        {
+          "name": "a",
+          "type": "u8"
+        },
+        {
+          "name": "b",
+          "type": "u8"
+        }
+      ]
+    },
+    {
       "name": "initialize",
       "discriminator": [
         175,
@@ -19,8 +48,56 @@
         155,
         237
       ],
-      "accounts": [],
+      "accounts": [
+        {
+          "name": "fee_payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "calci_acc",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
       "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "CalciResult",
+      "discriminator": [
+        65,
+        163,
+        124,
+        193,
+        5,
+        112,
+        6,
+        188
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "CalciResult",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "calci_result",
+            "type": "u8"
+          },
+          {
+            "name": "payer",
+            "type": "pubkey"
+          }
+        ]
+      }
     }
   ]
 }
