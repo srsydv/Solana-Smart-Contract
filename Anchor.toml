@@ -12,7 +12,7 @@ calci = "FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "testnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

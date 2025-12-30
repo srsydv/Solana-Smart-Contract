@@ -1,1 +1,1 @@
-/Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/calci/target/sbpf-solana-solana/release/libcalci.rlib: /Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/calci/programs/calci/src/lib.rs
+/Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/target/sbpf-solana-solana/release/libcalci.rlib: /Users/shrishyadav/Documents/Startup/Solana/Solana-Smart-Contract/programs/calci/src/lib.rs

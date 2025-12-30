@@ -1,0 +1,19 @@
+Streaming transaction logs mentioning FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm. Confirmed commitment
+Transaction executed in slot 431664313:
+  Signature: 2wvHURGrZSfK55XYJN1rrQc1KN8ZyZLSqTov6gnHTA67kJ3ToaaqSc2BzLNzn8J6vLFziws3JArL3X5ege1XLJJv
+  Status: Ok
+  Log Messages:
+    Program FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm invoke [1]
+    Program log: Instruction: Initialize
+    Program log: Greetings from: FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm
+    Program FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm consumed 2942 of 200000 compute units
+    Program FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm success
+Transaction executed in slot 431664315:
+  Signature: 2wvHURGrZSfK55XYJN1rrQc1KN8ZyZLSqTov6gnHTA67kJ3ToaaqSc2BzLNzn8J6vLFziws3JArL3X5ege1XLJJv
+  Status: Ok
+  Log Messages:
+    Program FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm invoke [1]
+    Program log: Instruction: Initialize
+    Program log: Greetings from: FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm
+    Program FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm consumed 2942 of 200000 compute units
+    Program FrYZABVkq3TuCnSrhq437qvEBdF4Bi1grBAeLD8yZcrm success
