@@ -33,6 +33,16 @@ pub mod calci {
         Ok(())
     }
 
+    pub fn div(ctx: Context<Sub>,a: u8, b: u8) -> Result<()> {
+        msg!("Greetings from calci program: {:?}", ctx.program_id);
+        msg!("A: {:?}", a);
+        msg!("B: {:?}", b);
+        require!(b != 0, ErrorCode::DivisionByZero);
+        ctx.accounts.calci_acc.calci_result = a / b;
+        msg!("Result: {:?}", ctx.accounts.calci_acc.calci_result);
+        Ok(())
+    }
+
 }
 
 #[account]
@@ -40,6 +50,12 @@ pub mod calci {
 pub struct CalciResult {
     pub calci_result: u8,
     pub payer: Pubkey,
+}
+
+#[error_code]
+pub enum ErrorCode {
+    #[msg("Division by zero")]
+    DivisionByZero,
 }
 
 #[derive(Accounts)]
