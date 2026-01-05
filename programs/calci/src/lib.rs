@@ -36,6 +36,7 @@ pub mod calci {
 }
 
 #[account]
+#[derive(InitSpace)]
 pub struct CalciResult {
     pub calci_result: u8,
     pub payer: Pubkey,
@@ -45,7 +46,7 @@ pub struct CalciResult {
 pub struct Initialize<'info> {
     #[account(mut)]
     fee_payer: Signer<'info>,
-    #[account(init, space = 8 + 1+ 32, payer = fee_payer)]
+    #[account(init, space = 8 + CalciResult::INIT_SPACE, payer = fee_payer)]
     calci_acc: Account<'info, CalciResult>,
     system_program: Program<'info, System>,
 }
