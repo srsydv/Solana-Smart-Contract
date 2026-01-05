@@ -46,7 +46,7 @@ pub struct CalciResult {
 pub struct Initialize<'info> {
     #[account(mut)]
     fee_payer: Signer<'info>,
-    #[account(init, space = 8 + CalciResult::INIT_SPACE, payer = fee_payer)]
+    #[account(init, space = 8 + CalciResult::INIT_SPACE, payer = fee_payer, seeds = [b"calci_result", fee_payer.key().as_ref()], bump)]
     calci_acc: Account<'info, CalciResult>,
     system_program: Program<'info, System>,
 }
