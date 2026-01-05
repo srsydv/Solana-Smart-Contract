@@ -23,6 +23,16 @@ pub mod calci {
         Ok(())
     }
 
+
+    pub fn sub(ctx: Context<Sub>,a: u8, b: u8) -> Result<()> {
+        msg!("Greetings from calci program: {:?}", ctx.program_id);
+        msg!("A: {:?}", a);
+        msg!("B: {:?}", b);
+        ctx.accounts.calci_acc.calci_result = a - b;
+        msg!("Result: {:?}", ctx.accounts.calci_acc.calci_result);
+        Ok(())
+    }
+
 }
 
 #[account]
@@ -42,6 +52,12 @@ pub struct Initialize<'info> {
 
 #[derive(Accounts)]
 pub struct Add<'info> {
+    #[account(mut)]
+    calci_acc: Account<'info, CalciResult>,
+}
+
+#[derive(Accounts)]
+pub struct Sub<'info> {
     #[account(mut)]
     calci_acc: Account<'info, CalciResult>,
 }
