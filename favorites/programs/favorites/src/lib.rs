@@ -1,20 +1,39 @@
 use anchor_lang::prelude::*;
+// Our program's address!
+// This matches the key in the target/deploy directory
+declare_id!("5gtuZZHCqjBoErsuroZaCDjRnPyB3StUzhE7VR7TR2hc");
 
-declare_id!("4pCTeU6ZZmPkzkPGLoW6RGAqQo2yw9zguptDRprfFQA4");
+// Anchor programs always use 8 bits for the discriminator
+pub const ANCHOR_DISCRIMINATOR_SIZE: usize = 8;
 
+// Our Solana program! 
 #[program]
 pub mod favorites {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        msg!("Greetings from: {:?}", ctx.program_id);
+    // Our instruction handler! It sets the user's favorite number and color
+    pub fn set_favorites(context: Context<SetFavorites>, number: u64, color: String, hobbies: Vec<String>) -> Result<()> {
+        let user_public_key = context.accounts.user.key();
+        msg!("Greetings from {}", context.program_id);
+        msg!(
+            "User {user_public_key}'s favorite number is {number}, favorite color is: {color}",
+        );
+
+        msg!(
+            "User's hobbies are: {:?}",
+            hobbies
+        ); 
+
+        context.accounts.favorites.set_inner(Favorites {
+            number,
+            color,
+            hobbies
+        });
         Ok(())
     }
+
+    // We can also add a get_favorites instruction handler to return the user's favorite number and color
 }
-
-#[derive(Accounts)]
-pub struct Initialize {}
-
 
 // What we will put inside the Favorites PDA
 #[account]
@@ -43,3 +62,4 @@ pub struct SetFavorites<'info> {
     pub favorites: Account<'info, Favorites>,
 
     pub system_program: Program<'info, System>,
+}
