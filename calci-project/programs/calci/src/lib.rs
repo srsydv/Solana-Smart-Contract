@@ -73,3 +73,8 @@ pub struct Add<'info> {
     calci_acc: Account<'info, CalciResult>,
 }
 
+#[derive(Accounts)]
+pub struct Sub<'info> {
+    #[account(mut)]
+    calci_acc: Account<'info, CalciResult>,
+}
