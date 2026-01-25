@@ -49,17 +49,3 @@ pub struct Favorites {
 }
 // When people call the set_favorites instruction, they will need to provide the accounts that will be modifed. This keeps Solana fast!
 #[derive(Accounts)]
-pub struct SetFavorites<'info> {
-    #[account(mut)]
-    pub user: Signer<'info>,
-
-    #[account(
-        init, 
-        payer = user, 
-        space = ANCHOR_DISCRIMINATOR_SIZE + Favorites::INIT_SPACE, 
-        seeds=[b"favorites", user.key().as_ref()],
-    bump)]
-    pub favorites: Account<'info, Favorites>,
-
-    pub system_program: Program<'info, System>,
-}
